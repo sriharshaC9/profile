@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-light: 243, 244, 246;
+  --background-dark: 17, 24, 39;
+  --text-light: 17, 24, 39;
+  --text-dark: 243, 244, 246;
+}
+
+body {
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+}
+
+@layer base {
+  body {
+    @apply transition-colors duration-300;
+  }
+}
